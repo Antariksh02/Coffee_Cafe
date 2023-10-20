@@ -1,0 +1,286 @@
+@font-face {
+    font-family: myFont;
+    src: url(Saturday.otf);
+  }
+
+  @font-face {
+    font-family: whyus;
+    src: url(Bagrile.otf);
+  }
+  @font-face{
+    font-family: menutitle;
+    src: url(Zasline.otf);
+  }
+  @font-face{
+    font-family: SEEMENU;
+    src: url(Gold\ Lines\ Serif\ Trial.otf);
+  }
+  @font-face{
+    font-family: LoveCoffee;
+    src: url(Agatho_\ Bold.otf);
+  }
+  @font-face{
+    font-family: LoveCoffeepara;
+    src: url(RomanSerif.ttf);
+  }
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+main{
+    width: 100%;
+    height: auto;
+    background-color: antiquewhite;
+}
+nav{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 60px;
+  position: fixed;
+  background-color: #DADDB1;
+  z-index: 2;
+}
+.logo{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40PX ;
+}
+.nav-list{
+  margin-right: 80px;
+}
+nav a{
+  text-decoration: none;
+  color: #423930;
+  padding: 10px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+nav button i{
+font-size: 20px;
+}
+
+
+#close{
+display: none;
+}
+
+#open{
+display: none;
+}
+
+
+
+@media (max-width:600px){
+nav{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 60px;
+  position: fixed;
+  background-color: #DADDB1;
+  z-index: 2;
+}
+.logo{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40PX ;
+}
+.nav-list{
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100%;
+  background-color: #DADDB1;
+  margin-left: -100px;
+  transform: translateX(-100%);
+ z-index: 4;
+  transition: 0.6s ease;
+}
+
+nav a{
+  text-decoration: none;
+  color: #423930;
+  padding: 10px 184px;
+  line-height: 20px;
+  font-weight: 600;
+  width: 100%;
+  font-size: 24px;
+  transition: 0.6s;
+}
+nav a:hover{
+background-color: white;
+}
+
+#close{
+display: block;
+position: absolute;
+top: 10px;
+right: 10px;
+border: none;
+background-color: transparent;
+cursor: pointer;
+}
+#open{
+display: block;
+transform: translateX(-110px);
+background-color: transparent;
+border: none;
+cursor: pointer;
+}
+
+}
+
+
+
+
+.newcoffee{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    
+}
+.newcoffee h2{
+    position: absolute;
+    color: white;
+    top:80px;
+    left: 80px;
+    font-size: 30px;
+    font-weight: 100;
+}
+@media(max-width:600px){
+    .newcoffee{
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        text-align: center;
+    }
+    
+    .newcoffee h2{
+        margin-top: 40px;
+        color: white;
+        font-size: 30px;
+        font-weight: 100;
+    }
+}
+/*-----------------------------------------------weserve*/
+
+.section{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+.section .title{
+  width: 100%;
+  height: 120px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  color: #6C3428;
+  font-family: whyus;
+  font-size: 30px;
+}
+.menu{
+  width: 400px;
+  height: 500px;
+ 
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.menu img{
+  width: 300px;
+  border-radius: 50%;
+}
+
+.coffeename{
+  width: 100%;
+  height: 40px;
+ color: #423930;
+  text-align: center;
+  font-size: 24px;
+  font-family: menutitle;
+}
+.coffeeprice{
+  width: 100%;
+  height: 40px;
+  color: grey;
+  text-align: center;
+  font-size: 26px;
+}
+
+.contain{
+  width: 100%;
+  height: 40px;
+ color: darkgrey;
+  text-align: center;
+  font-size: 22px;
+}
+
+
+/*----------------------------------------------------------------------------------------------FOOTER*/
+
+
+footer{
+    width: 100%;
+    height: 60vh;
+    background-image: url("pexels-adrien-olichon-2387793.jpg");
+   color: white;
+   text-align: center;
+  
+  }
+  footer h1{
+  width: 700px;
+  margin-left: 24%;
+  padding-top: 80px;
+  font-weight: 100;
+  }
+  footer h5{
+    padding-top: 80px;
+    font-weight: 100;
+    font-size: 16px;
+  }
+  
+  @media(max-width:600px){
+    footer{
+      width: 100%;
+      height: auto;
+      background-image: url("pexels-adrien-olichon-2387793.jpg");
+     color: white;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+    footer h1{
+    padding-top: 80px;
+    font-weight: 100;
+    margin-left: -10px;
+    }
+    footer h5{
+      padding-top: 80px;
+      font-weight: 100;
+      font-size: 16px;
+    }
+    
+  }
+  

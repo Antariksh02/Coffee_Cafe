@@ -1,0 +1,693 @@
+@font-face {
+    font-family: myFont;
+    src: url(Saturday.otf);
+  }
+
+  @font-face {
+    font-family: whyus;
+    src: url(Bagrile.otf);
+  }
+  @font-face{
+    font-family: menutitle;
+    src: url(Zasline.otf);
+  }
+  @font-face{
+    font-family: SEEMENU;
+    src: url(Gold\ Lines\ Serif\ Trial.otf);
+  }
+  @font-face{
+    font-family: LoveCoffee;
+    src: url(Agatho_\ Bold.otf);
+  }
+  @font-face{
+    font-family: LoveCoffeepara;
+    src: url(RomanSerif.ttf);
+  }
+  @font-face{
+    font-family: Leavereply;
+    src: url(Filxgirl.TTF);
+  }
+  
+  
+*{
+    padding: 0;
+    margin: 0;
+}
+main{
+    width: 100%;
+    height: auto;
+    background-color: antiquewhite;
+}
+nav{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 60px;
+  position: fixed;
+  background-color: #DADDB1;
+  z-index: 2;
+}
+.logo{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40PX ;
+}
+.nav-list{
+  margin-right: 80px;
+}
+nav a{
+  text-decoration: none;
+  color: #423930;
+  padding: 10px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+nav button i{
+font-size: 20px;
+}
+
+
+#close{
+display: none;
+}
+
+#open{
+display: none;
+}
+
+
+
+@media (max-width:600px){
+nav{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 60px;
+  position: fixed;
+  background-color: #DADDB1;
+  z-index: 2;
+}
+.logo{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40PX ;
+}
+.nav-list{
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100%;
+  background-color: #DADDB1;
+  margin-left: -100px;
+  transform: translateX(-100%);
+ z-index: 4;
+  transition: 0.6s ease;
+}
+
+nav a{
+  text-decoration: none;
+  color: #423930;
+  padding: 10px 184px;
+  line-height: 20px;
+  font-weight: 600;
+  width: 100%;
+  font-size: 24px;
+  transition: 0.6s;
+}
+nav a:hover{
+background-color: white;
+}
+
+#close{
+display: block;
+position: absolute;
+top: 10px;
+right: 10px;
+border: none;
+background-color: transparent;
+cursor: pointer;
+}
+#open{
+display: block;
+transform: translateX(-110px);
+background-color: transparent;
+border: none;
+cursor: pointer;
+}
+
+}
+
+
+section{
+    width: 100%;
+    height: auto;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.leftside{
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-right: 1px solid grey;
+}
+.product{
+    
+        width: 100%;
+        height: 630px;
+        display: flex;
+        justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.product img{
+    width: 300px;
+    border-radius: 50%;
+  margin-top: 50px;
+  }
+  
+  .coffeename{
+    width: 100%;
+    height: 20px;
+   color: #423930;
+    text-align: center;
+    font-size: 24px;
+    font-family: menutitle;
+  }
+  
+  
+  .contain{
+    width: 80%;
+    height: 20px;
+   color: darkgrey;
+    text-align: center;
+    font-size: 22px;
+  }
+
+
+.socialmedia{
+    width: 100%;
+    height: 40px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 25px;
+    color: lightgray;
+   
+}
+.socialmedia i{
+    margin-top: 20px;
+    letter-spacing: 20px;
+    cursor: pointer;
+    transition: 0.6s ease;
+}
+.socialmedia i:hover{
+    color:black;
+}
+
+@media (max-width:600px){
+  .leftside{
+    width: 100%;
+    height: 240vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.product{
+    
+        width: 100%;
+        height: 630px;
+        display: flex;
+        justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.product img{
+    width: 300px;
+    border-radius: 50%;
+  margin-top: 70px;
+  }
+  
+  .coffeename{
+    width: 100%;
+    height: 20px;
+   color: #423930;
+    text-align: center;
+    font-size: 24px;
+    font-family: menutitle;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  
+  .contain{
+    width: 80%;
+    height: 20px;
+   color: darkgrey;
+    text-align: center;
+    font-size: 22px;
+  }
+
+
+.socialmedia{
+    width: 100%;
+    height: 40px;
+    margin-top: 160px;
+    text-align: center;
+    font-size: 25px;
+    color: lightgray;
+   
+}
+.socialmedia i{
+    margin-top: 20px;
+    letter-spacing: 20px;
+    cursor: pointer;
+    transition: 0.6s ease;
+}
+.socialmedia i:hover{
+    color:black;
+}
+}
+/*---------------------------------------------------------------------------------------------REPLY*/
+.reply{
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    border-top: 2px solid grey;
+    
+
+}
+.reply h1{
+    margin-left: 20px;
+    font-size: 54px;
+    margin-bottom: 10px;
+    font-weight: 100;
+    font-family: Leavereply;
+}
+.reply h2{
+    margin-left: 20px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: grey;
+    font-weight: 100;
+}
+.reply input{
+    width: 90%;
+    height: 45px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border: none;
+    font-size: 20px;
+    padding-left: 14px;
+}
+textarea{
+    margin-left: 20px;
+    border: none;
+    resize: none;
+    font-size: 20px;
+    padding-left: 14px;
+    padding-top: 10px;
+}
+.seemenu button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    letter-spacing: 4px;
+    font-family: SEEMENU;
+    margin-left: 20px;
+    margin-top: 20px;
+    transition: 0.6s ease;
+  }
+  .seemenu button:hover{
+    background-color: #6C3428;
+    color: white;
+    
+  }
+
+
+@media (max-width:600px) {
+  .reply{
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+
+}
+.reply h1{
+    margin-left: 20px;
+    font-size: 54px;
+    margin-bottom: 10px;
+    font-weight: 100;
+    font-family: Leavereply;
+}
+.reply h2{
+    margin-left: 20px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: grey;
+    font-weight: 100;
+}
+.reply input{
+    width: 90%;
+    height: 45px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border: none;
+}
+textarea{
+    margin-left: 20px;
+    border: none;
+    resize: none;
+    box-sizing: border-box;
+
+    width: 90%;
+}
+.seemenu button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    letter-spacing: 4px;
+    font-family: SEEMENU;
+    margin-left: 20px;
+    margin-top: 20px;
+    transition: 0.6s ease;
+  }
+  .seemenu button:hover{
+    background-color: #6C3428;
+    color: white;
+    
+  }
+}
+
+
+/*---------------------------------------------------------------------------------------------BILL*/
+
+.bill{
+    width: 29.9%;
+    height: 1260px;
+   margin-top: 140px;
+}
+
+.bill .box{
+    font-style: italic;
+    height: 160px;
+  border-bottom: 1px solid grey;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+.bill h1{
+    font-weight: 100;
+    font-size: 35px;
+    margin-left: 40px;
+    width: 100%;
+}
+
+.bill h3{
+    font-weight: 100;
+    font-size: 25px;
+    margin-left: 40px;
+    color: grey;
+}
+
+.bill input{
+    margin-right: 10px;
+}
+
+
+
+
+.bill button{
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    letter-spacing: 4px;
+    font-family: SEEMENU;
+    margin-left: 20px;
+    transition: 0.6s ease;
+    cursor: pointer;
+  }
+  .bill button:hover{
+    background-color: #7dff83;
+    color: white;
+    
+  }
+  .noofpeople{
+    margin-left: 20px;
+    height: 38px;
+    border: 1px solid #423930;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+
+.box:nth-child(5){
+    height: auto;
+    padding-bottom: 20px;
+    
+}
+.option{
+    display: flex;
+  margin-top: 40px;
+width: 100%;
+}
+.option img{
+    width: 80px;
+    border-radius: 50%;
+
+}
+.option .coffeename{
+    width: 100%;
+    height: 40px;
+   color: #423930;
+    text-align: center;
+    font-size: 24px;
+    font-family: menutitle;
+    margin-top: 20px;
+  }
+  .coffeeprice{
+    width: 100%;
+    height: 40px;
+    color: grey;
+    text-align: center;
+    font-size: 26px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-left: 1px solid grey;
+  }
+  
+  #food:hover{
+    background-color: #6C3428;
+        }
+        #coffee{
+          width: auto;
+          padding: 0 5px;
+        }
+        #coffee:hover{
+          background-color: #6C3428;
+          
+        }
+
+  @media (max-width:600px) {
+
+    .bill{
+      width: 100%;
+      height: 1260px;
+     margin-top: 140px;
+  }
+  
+  .bill .box{
+      font-style: italic;
+      height: 160px;
+    border-bottom: 1px solid grey;
+     display: flex;
+     justify-content: center;
+     flex-direction: row;
+     flex-wrap: wrap;
+  }
+  
+  .bill h1{
+      font-weight: 100;
+      font-size: 35px;
+      margin-left: 40px;
+      width: 100%;
+  }
+  
+  .bill h3{
+      font-weight: 100;
+      font-size: 25px;
+      margin-left: 40px;
+      color: grey;
+  }
+  
+  .bill input{
+      margin-right: 10px;
+  }
+  
+  
+  
+  
+  .bill button{
+      width: 80px;
+      height: 40px;
+      border-radius: 5px;
+      border: 1px solid black;
+      background-color: white;
+      color: black;
+      font-size: 18px;
+      letter-spacing: 4px;
+      font-family: SEEMENU;
+      margin-left: 20px;
+      transition: 0.6s ease;
+      cursor: pointer;
+    }
+    .bill button:hover{
+      background-color: #7dff83;
+      color: white;
+      
+    }
+    .noofpeople{
+      margin-left: 20px;
+      height: 38px;
+    }
+  
+  
+  .box:nth-child(5){
+      height: auto;
+      
+      
+  }
+  .option{
+      display: flex;
+      width: 100%;
+    margin-top: 40px;
+  
+  }
+  .option img{
+      width: 80px;
+     border-radius: 50%;
+  
+  }
+  .option .coffeename{
+      width: 100%;
+      height: 40px;
+     color: #423930;
+      text-align: center;
+      font-size: 24px;
+      font-family: menutitle;
+    }
+    .coffeeprice{
+      width: 100%;
+      height: 40px;
+      color: grey;
+      text-align: center;
+      font-size: 26px;
+      margin-left: 20px;
+      margin-top: 20px;
+      border-left: 1px solid grey;
+    }
+    #food:hover{
+background-color: #6C3428;
+    }
+    #coffee{
+      width: auto;
+      padding: 0 5px;
+    }
+    #coffee:hover{
+      background-color: #6C3428;
+      
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------FOOTER*/
+
+
+footer{
+    width: 100%;
+    height: 60vh;
+    background-image: url("pexels-adrien-olichon-2387793.jpg");
+   color: white;
+   text-align: center;
+  
+  }
+  footer h1{
+  width: 700px;
+  margin-left: 24%;
+  padding-top: 80px;
+  font-weight: 100;
+  }
+  footer h5{
+    padding-top: 80px;
+    font-weight: 100;
+    font-size: 16px;
+  }
+  
+  @media(max-width:600px){
+    footer{
+      width: 100%;
+      height: auto;
+      background-image: url("pexels-adrien-olichon-2387793.jpg");
+     color: white;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+    footer h1{
+    padding-top: 80px;
+    font-weight: 100;
+    margin-left: -10px;
+    }
+    footer h5{
+      padding-top: 80px;
+      font-weight: 100;
+      font-size: 16px;
+    }
+    
+  }
+  

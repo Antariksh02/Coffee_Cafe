@@ -1,0 +1,741 @@
+@font-face {
+    font-family: myFont;
+    src: url(Saturday.otf);
+  }
+
+  @font-face {
+    font-family: whyus;
+    src: url(Bagrile.otf);
+  }
+  @font-face{
+    font-family: menutitle;
+    src: url(Zasline.otf);
+  }
+  @font-face{
+    font-family: SEEMENU;
+    src: url(Gold\ Lines\ Serif\ Trial.otf);
+  }
+  @font-face{
+    font-family: LoveCoffee;
+    src: url(Agatho_\ Bold.otf);
+  }
+  @font-face{
+    font-family: LoveCoffeepara;
+    src: url(RomanSerif.ttf);
+  }
+  @font-face{
+    font-family: stir;
+    src: url(Mantana-Regular.otf);
+  }
+
+*{
+    margin:0;
+    padding: 0;
+}
+main{
+    width: 100%;
+    height: 400vh;
+    background-color: lightblue;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 60px;
+    background-color: #DADDB1;
+    z-index: 2;
+}
+.logo{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40PX ;
+}
+.nav-list{
+    margin-right: 80px;
+}
+nav a{
+    text-decoration: none;
+    color: #423930;
+    padding: 10px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+nav button i{
+  font-size: 20px;
+}
+
+
+#close{
+  display: none;
+}
+
+#open{
+  display: none;
+}
+
+
+
+@media (max-width:600px){
+  nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 60px;
+    position: fixed;
+    background-color: #DADDB1;
+    z-index: 2;
+}
+.logo{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40PX ;
+}
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #DADDB1;
+    margin-left: -100px;
+    transform: translateX(-100%);
+   z-index: 4;
+    transition: 0.6s ease;
+}
+
+nav a{
+    text-decoration: none;
+    color: #423930;
+    padding: 10px 184px;
+    font-weight: 600;
+    width: 100%;
+    font-size: 24px;
+    transition: 0.6s;
+}
+nav a:hover{
+  background-color: white;
+}
+
+#close{
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+#open{
+  display: block;
+  transform: translateX(-110px);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------*/
+header{
+    width: 100%;
+    height:105vh;
+    background-image: url("pngwing.com (6).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   padding-top: 60px;
+}
+
+.heading{
+    width: 80%;
+    height: 80vh;
+    background-color: blanchedalmond;
+    display: flex;
+    position: relative;
+    border-radius: 10px;
+    margin-top: -140px;
+}
+
+.left{
+width: 50%;
+height: 100%;
+background-color: #113946;
+position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.left h1{
+    font-family: myFont;
+    color: aliceblue;
+    font-size: 100px;
+    margin-left: 20px;
+}
+.left h3{
+  font-family: stir;
+  color: white;
+  font-size: 40px;
+  font-weight: 100;
+  position: absolute;
+  bottom: 50px;
+  margin-left: 10px;
+}
+.left h2{
+  font-style: italic;
+  color: white;
+  font-size: 30px;
+  font-weight: 100;
+  position: absolute;
+  bottom: 20px;
+  margin-left: 10px;
+}
+.left button{
+  position: absolute;
+  bottom: 80px;
+  padding: 20px 30px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 20px;
+  color: white;
+  font-size: 14px;
+  transition: 0.6s linear;
+  cursor: pointer;
+}
+.left button:hover{
+  background-color: white;
+  color: #113946;
+}
+.right{
+    width: 50%;
+    height: 100%;
+    position: relative;
+   
+}
+.right #coffeeimg{
+    width: 500px;
+    position: absolute;
+   top: 10%;
+   z-index: 1;
+}
+.croissantimg{
+  width: 250px;
+  position: absolute;
+  transform: rotate(90deg);
+  bottom: 0;
+  right: 0;
+}
+
+
+@media(max-width: 600px){
+
+    header{
+        width: 100%;
+        height:100vh;
+        background-image: url("pngwing.com (6).png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .heading{
+        width: 100%;
+        height: 100vh;
+        background-color: blanchedalmond;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+       margin-top: 0px;
+    }
+    
+    .left{
+    width: 100%;
+    height: 50%;
+    background-color: #113946;
+    }
+    .left h1{
+        font-family: myFont;
+        color: aliceblue;
+        font-size: 60px;
+    }
+    .left img{
+      width: 300px;
+    }
+    .right{
+        width: 100%;
+        height: 50%;
+    }
+    .right #coffeeimg{
+        width: 300px;
+    }
+    .croissantimg{
+      width: 200px;
+      position: absolute;
+      transform: rotate(90deg);
+      bottom: 0;
+      right: 40px;
+    }
+}
+/*------------------------------------------------------------------------------------------------------WHY US*/
+section{
+    width: 100%;
+    height: 50vh;
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.whyus{
+    width: 100%;
+    height: 20%;
+    font-size: 26px;
+    color: #6C3428;
+    font-family: whyus;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.whyuslist{
+    width: 100%;
+    height: 80%;
+ display: flex;
+ justify-content: space-evenly;
+}
+section .box{
+    width: 300px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.icon{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.infohead{
+    width: 100%;
+    height: 10%;
+color: gray;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    
+
+}
+.infohead h1{
+  font-weight: 400;
+}
+.info{
+    width: 100%;
+    height: 50%;
+   margin-top: 20px;
+display: flex;
+justify-content: center;
+text-align: center; 
+font-size: 20px;
+color: darkgray;
+}
+
+
+@media (max-width:600px){
+  section{
+    width: 100%;
+    height: auto;
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.whyus{
+    width: 100%;
+    height: 20%;
+    font-size: 26px;
+    color: #6C3428;
+    font-family: whyus;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.whyuslist{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+section .box{
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+.icon{
+    width: 100%;
+    height: 40%;
+ 
+}
+.infohead{
+    width: 100%;
+    height: 10%;
+color: gray;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    
+
+}
+.infohead h1{
+  font-weight: 400;
+}
+.info{
+    width: 100%;
+    height: 50%;
+   margin-top: 20px;
+display: flex;
+justify-content: center;
+text-align: center; 
+font-size: 20px;
+color: darkgray;
+}
+
+}
+
+/*-------------------------------------------------------------------------------------------------------WE SERVE*/
+
+
+
+
+
+.section{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+.section .title{
+  width: 100%;
+  height: 120px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  color: #6C3428;
+  font-family: whyus;
+  font-size: 30px;
+}
+.menu{
+  width: 400px;
+  height: 500px;
+ 
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.menu img{
+  width: 300px;
+  border-radius: 50%;
+}
+
+.coffeename{
+  width: 100%;
+  height: 40px;
+ color: #423930;
+  text-align: center;
+  font-size: 24px;
+  font-family: menutitle;
+}
+.coffeeprice{
+  width: 100%;
+  height: 40px;
+  color: grey;
+  text-align: center;
+  font-size: 26px;
+}
+
+.contain{
+  width: 100%;
+  height: 40px;
+ color: darkgrey;
+  text-align: center;
+  font-size: 22px;
+}
+.seemenu{
+  width: 100%;
+  height: 40px;
+  text-align: center;
+}
+.seemenu button{
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  letter-spacing: 4px;
+  font-family: SEEMENU;
+  transition: 0.6s ease;
+}
+.seemenu button:hover{
+  background-color: #6C3428;
+  color: white;
+  
+}
+
+
+/*----------------------------------------------------------------------------------------------------AMENITIES*/
+.amenities{
+  width: 100%;
+  height: 50vh;
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.amenities .title{
+  width: 100%;
+  height: 90px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  color: #6C3428;
+  font-family: whyus;
+  font-size: 30px;
+  
+}
+.amenitiesbox {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.amenitiesbox .box{
+width: 200px;
+height: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+flex-wrap: wrap;
+}
+.amenititesimg{
+  width: 100%;
+  height: 60%;
+  display: flex;
+justify-content: center;
+align-items: center;
+}
+.amenitiesinfo{
+  width: 100%;
+  height: 60%;
+  font-size: 20px;
+  text-align: center;
+  color: grey;
+  font-weight: 100;
+}
+@media(max-width:600px){
+  .amenities{
+    width: 100%;
+    height: auto;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+  }
+  .amenities .title{
+    width: 100%;
+    height: 90px;
+    display: flex;
+      justify-content: center;
+      align-items: center;
+    color: #6C3428;
+    font-family: whyus;
+    font-size: 30px;
+    
+  }
+  .amenitiesbox {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .amenitiesbox .box{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  }
+  .amenititesimg{
+    width: 100%;
+    height: 60%;
+  }
+  .amenitiesinfo{
+    width: 100%;
+    height: 60%;
+    font-size: 20px;
+    text-align: center;
+    color: grey;
+    font-weight: 100;
+  }
+}
+/*-------------------------------------------------------------------------------------------------FOOD*/
+.food{
+  width: 100%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+}
+.food .title{
+  width: 100%;
+  height: 90px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  color: #6C3428;
+  font-family: whyus;
+  font-size: 30px;
+}
+.food img{
+  width: 310px;
+  height: 300px;
+  
+}
+
+/*------------------------------------------------------------------LOVE FOR OUR COFFEE*/
+
+
+.loveCoffee{
+  width: 100%;
+  height: 100vh;
+  background-color: azure;
+  background-image: url('pngwing.com (6).png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.para{
+  text-align: center;
+  padding-top:40px ;
+  width: 550px;
+  background-color: azure;
+}
+.para h1{
+  font-size: 70px;
+  color: #423930;
+  margin-bottom: 40px;
+  font-family: LoveCoffee;
+  font-weight: 100;
+}
+.para h2{
+  color: grey;
+  margin-top: 40px;
+  font-family: LoveCoffeepara;
+  font-weight: 100;
+}
+.para span{
+  color: #423930;
+}
+.para h4{
+  margin-top: 20px;
+  color: grey;
+}
+/*----------------------------------------------------------------------------------------------FOOTER*/
+
+
+footer{
+  width: 100%;
+  height: 60vh;
+  background-image: url("pexels-adrien-olichon-2387793.jpg");
+ color: white;
+ text-align: center;
+
+}
+footer h1{
+width: 700px;
+margin-left: 24%;
+padding-top: 80px;
+font-weight: 100;
+}
+footer h5{
+  padding-top: 80px;
+  font-weight: 100;
+  font-size: 16px;
+}
+
+@media(max-width:600px){
+  footer{
+    width: 100%;
+    height: auto;
+    background-image: url("pexels-adrien-olichon-2387793.jpg");
+   color: white;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  }
+  footer h1{
+  padding-top: 80px;
+  font-weight: 100;
+  margin-left: -10px;
+  }
+  footer h5{
+    padding-top: 80px;
+    font-weight: 100;
+    font-size: 16px;
+  }
+  
+}
