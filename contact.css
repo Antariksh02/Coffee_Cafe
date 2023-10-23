@@ -137,7 +137,7 @@ cursor: pointer;
 }
 #open{
 display: block;
-transform: translateX(-110px);
+transform: translateX(-60px);
 background-color: transparent;
 border: none;
 cursor: pointer;
