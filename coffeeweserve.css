@@ -23,16 +23,18 @@
     font-family: LoveCoffeepara;
     src: url(RomanSerif.ttf);
   }
-
+  @font-face{
+    font-family: stir;
+    src: url(Mantana-Regular.otf);
+  }
 
 *{
+    margin:0;
     padding: 0;
-    margin: 0;
 }
 main{
     width: 100%;
     height: auto;
-    background-color: antiquewhite;
 }
 nav{
   width: 100%;
@@ -107,12 +109,13 @@ nav{
   transform: translateX(-100%);
  z-index: 4;
   transition: 0.6s ease;
+  overflow: hidden;
 }
 
 nav a{
   text-decoration: none;
   color: #423930;
-  padding: 10px 184px;
+  padding: 10px 154px;
   line-height: 20px;
   font-weight: 600;
   width: 100%;
@@ -134,7 +137,7 @@ cursor: pointer;
 }
 #open{
 display: block;
-transform: translateX(-110px);
+transform: translateX(-60px);
 background-color: transparent;
 border: none;
 cursor: pointer;
